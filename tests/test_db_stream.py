@@ -1,7 +1,10 @@
 import os
+import sys
 import sqlite3
 import pytest
-from sqlite_db_stream import SqliteDatabaseStream
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+from database_stream.sqlite_db_stream import SqliteDatabaseStream
 
 @pytest.fixture
 def temp_db(tmp_path):
