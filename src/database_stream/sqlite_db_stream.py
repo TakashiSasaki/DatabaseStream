@@ -1,5 +1,5 @@
 import sqlite3
-from db_stream import DatabaseStream
+from .db_stream import DatabaseStream
 
 class SqliteDatabaseStream(DatabaseStream):
     """
